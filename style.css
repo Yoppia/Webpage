@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(background.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .box{
+    width: 650px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    font-family: 'Century Gothic',sans-serif;
+  }
+  .box-img{
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+    transform: rotate(-6deg)
+  }
+  .box h1{
+    font-size: 70px;
+    letter-spacing: 8px;
+    font-weight: 100;
+  }
+  .box h2{
+    font-size: 50px;
+    letter-spacing: 4px;
+    font-weight: 100;
+  }
+  .box h3{
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 100;
+  }
+  .box h5{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
+  }
+  .box p{
+    text-align: justify;
+  }
+
+  form {
+    /* width: 100%; */
+    background: rgba(0, 0, 0, 0);
+    padding: 20px;
+    /* display: flex; */
+    /* flex-direction: row; */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    /* max-width: 425px; */
+    /* width: 100%; */
+    /* padding: 20px 20px; */
+}
+
+form input, textarea {
+    margin: 10px 0;
+    border: 0;
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+form input[type=submit] {
+    /* width: 100%; */
+    background-color: rgb(66, 131, 230);
+}
+
+form textarea {
+    min-height: 60px;
+    max-height: 100px;
+    resize: vertical;
+}
+  
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  25% { border-color: orange; }
+}
+  
